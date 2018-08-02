@@ -73,7 +73,7 @@
 					{{ Form::open(['url' => $url, 'id' => 'submitForm', 'method' => $method,'class' => 'form-horizontal form-label-left', 'files' => true]) }}
                         {!! csrf_field() !!}
 						<div class="form-group">
-							<label class="control-label col-sm-3 col-xs-12">Level</label>
+							<label class="control-label col-sm-3 col-xs-12">Category</label>
 							<div class="col-sm-3 col-xs-12">
 								{{
 								Form::select(
