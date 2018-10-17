@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Aug 01, 2018 at 06:40 AM
+-- Generation Time: Oct 17, 2018 at 10:05 AM
 -- Server version: 10.1.30-MariaDB
 -- PHP Version: 7.1.14
 
@@ -19,7 +19,7 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Database: `odwin_panelm`
+-- Database: `odwin_multi`
 --
 
 -- --------------------------------------------------------
@@ -229,8 +229,7 @@ CREATE TABLE `media_library` (
 --
 
 INSERT INTO `media_library` (`id`, `name`, `type`, `url`, `size`, `user_created`, `created_at`, `updated_at`) VALUES
-(0, 'noprofileimage', 'png', 'img/noprofileimage.png', '1159', 1, '2017-05-29 19:56:03', '2017-05-29 19:56:03'),
-(1, 'laravel', 'jpg', 'upload/img/laravel.jpg', '27557', 2, '2018-07-31 14:38:25', '2018-07-31 14:38:25');
+(0, 'noprofileimage', 'png', 'img/noprofileimage.png', '1159', 1, '2017-05-29 19:56:03', '2017-05-29 19:56:03');
 
 -- --------------------------------------------------------
 
@@ -398,7 +397,7 @@ CREATE TABLE `users` (
 
 INSERT INTO `users` (`id`, `user_level_id`, `firstname`, `lastname`, `avatar_id`, `email`, `address`, `phone`, `gender`, `birthdate`, `username`, `password`, `active`, `user_modified`, `last_activity`, `created_at`, `updated_at`) VALUES
 (1, 1, 'Super', 'Admin', 0, 'superadmin@admin.com', 'Jl Madura xxxxxxx', '08383xxxxxxx', 'male', '1986-07-25', 'superadmin', '$2y$10$TkX/dDYrtvIEXidPOag5T.V8qbyluUHJg5ssBjKe6WlVqpItuN8uy', 1, 1, '2018-07-31 03:23:20', '2017-03-13 20:51:35', '2018-07-31 03:23:20'),
-(2, 2, 'Admin', 'Admin', 0, 'admin@admin.com', NULL, NULL, 'male', NULL, 'admin', '$2y$10$PQaUY4b0YsSo5qAuK8Cc.OB.WeEJHrJJ0FDgk6YE9xhXboVRou3We', 1, 1, '2018-08-01 03:12:15', '2017-04-19 14:29:01', '2018-08-01 03:12:15');
+(2, 2, 'Admin', 'Admin', 0, 'admin@admin.com', NULL, NULL, 'male', NULL, 'admin', '$2y$10$PQaUY4b0YsSo5qAuK8Cc.OB.WeEJHrJJ0FDgk6YE9xhXboVRou3We', 1, 1, '2018-10-17 08:03:41', '2017-04-19 14:29:01', '2018-10-17 08:03:41');
 
 -- --------------------------------------------------------
 
@@ -580,7 +579,7 @@ ALTER TABLE `language`
 -- AUTO_INCREMENT for table `media_library`
 --
 ALTER TABLE `media_library`
-  MODIFY `id` int(11) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `id` int(11) UNSIGNED NOT NULL AUTO_INCREMENT;
 
 --
 -- AUTO_INCREMENT for table `modules`
